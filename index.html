@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday 🎂</title>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONT AWESOME (icon phong bì, nút X) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- NHÂN VẬT -->
+  <div class="boxcute">
+    <div class="mi1">
+      <img src="https://i.imgur.com/1X6RZbS.png" alt="">
+    </div>
+    <div class="mi2">
+      <img src="https://i.imgur.com/1X6RZbS.png" alt="">
+    </div>
+  </div>
+
+  <!-- PHONG BÌ -->
+  <div class="mail">
+    <i class="fa-solid fa-envelope"></i>
+  </div>
+
+</div>
+
+<!-- HỘP THƯ -->
+<div class="boxMail">
+  <i class="fa-solid fa-xmark"></i>
+
+  <div class="boxMail-container">
+    <div class="card1">
+      <div class="userImg">
+        <img src="https://i.imgur.com/1X6RZbS.png" alt="">
+      </div>
+      <h3>Happy Birthday</h3>
+    </div>
+
+    <div class="card2">
+      <div class="card2-content">
+        <h3>Gửi Mimi 💖</h3>
+        <h2>
+          Chúc em tuổi mới luôn vui vẻ, xinh đẹp, mạnh khỏe và lúc nào cũng cười thật tươi nha 🎂🎉
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+  const mail = document.querySelector('.mail');
+  const boxMail = document.querySelector('.boxMail');
+  const closeBtn = document.querySelector('.fa-xmark');
+
+  mail.addEventListener('click', () => {
+    boxMail.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    boxMail.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>
